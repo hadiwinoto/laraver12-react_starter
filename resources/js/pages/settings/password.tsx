@@ -66,24 +66,21 @@ export default function Password() {
                                 value={data.current_password}
                                 onChange={(e) => setData('current_password', e.target.value)}
                                 type="password"
-                                className="mt-1 block w-full"
+                                className="mt-1 block w-full rounded-xs"
                                 autoComplete="current-password"
                                 placeholder="Current password"
                             />
-
                             <InputError message={errors.current_password} />
                         </div>
-
                         <div className="grid gap-2">
                             <Label htmlFor="password">New password</Label>
-
                             <Input
                                 id="password"
                                 ref={passwordInput}
                                 value={data.password}
                                 onChange={(e) => setData('password', e.target.value)}
                                 type="password"
-                                className="mt-1 block w-full"
+                                className="mt-1 block w-full rounded-xs"
                                 autoComplete="new-password"
                                 placeholder="New password"
                             />
@@ -99,7 +96,7 @@ export default function Password() {
                                 value={data.password_confirmation}
                                 onChange={(e) => setData('password_confirmation', e.target.value)}
                                 type="password"
-                                className="mt-1 block w-full"
+                                className="mt-1 block w-full rounded-xs"
                                 autoComplete="new-password"
                                 placeholder="Confirm password"
                             />
