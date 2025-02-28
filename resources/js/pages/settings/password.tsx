@@ -59,7 +59,6 @@ export default function Password() {
                     <form onSubmit={updatePassword} className="space-y-6">
                         <div className="grid gap-2">
                             <Label htmlFor="current_password">Current password</Label>
-
                             <Input
                                 id="current_password"
                                 ref={currentPasswordInput}
