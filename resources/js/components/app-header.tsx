@@ -36,7 +36,10 @@ const rightNavItems: NavItem[] = [
     },
 ];
 
-const activeItemStyles = 'text-neutral-900 dark:bg-neutral-800 dark:text-neutral-100';
+const activeItemStyles =
+  'bg-green-200 text-green-600 dark:bg-green-600 dark:text-green-200';
+
+
 
 interface AppHeaderProps {
     breadcrumbs?: BreadcrumbItem[];
@@ -104,17 +107,19 @@ export function AppHeader({ breadcrumbs = [] }: AppHeaderProps) {
                             <NavigationMenuList className="flex h-full items-stretch space-x-2">
                                 {mainNavItems.map((item, index) => (
                                     <NavigationMenuItem key={index} className="relative flex h-full items-center">
-                                        <Link
+                                       <Link
                                             href={item.url}
                                             className={cn(
                                                 navigationMenuTriggerStyle(),
-                                                page.url === item.url && activeItemStyles,
-                                                'h-9 cursor-pointer px-3',
+                                                'h-9 cursor-pointer px-3 transition-colors duration-200 hover:bg-green-100 hover:text-green-700 dark:hover:bg-green-700 dark:hover:text-green-200',
+                                                page.url === item.url && 'bg-green-100 text-green-700 dark:bg-green-700 dark:text-green-200' // Samakan dengan hover
                                             )}
-                                        >
+                                            >
                                             {item.icon && <Icon iconNode={item.icon} className="mr-2 h-4 w-4" />}
                                             {item.title}
                                         </Link>
+
+
                                         {page.url === item.url && (
                                             <div className="absolute bottom-0 left-0 h-0.5 w-full translate-y-px bg-black dark:bg-white"></div>
                                         )}
