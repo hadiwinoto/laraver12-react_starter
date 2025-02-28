@@ -54,6 +54,7 @@ export default function Profile({ mustVerifyEmail, status }: { mustVerifyEmail: 
                                 autoComplete="name"
                                 placeholder="Full name"
                             />
+
                             <InputError className="mt-2" message={errors.name} />
                         </div>
 
