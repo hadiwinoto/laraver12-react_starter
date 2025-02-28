@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d580901de64f9d577d8c139cea61306",
+    "content-hash": "b70c50f99a590530a677490a106d850b",
     "packages": [
         {
             "name": "brick/math",
@@ -5941,6 +5941,52 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "workos/workos-php",
+            "version": "v4.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/workos/workos-php.git",
+                "reference": "17bb8408033892cb3c0cc9e5e3fe833aeb32eec1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/workos/workos-php/zipball/17bb8408033892cb3c0cc9e5e3fe833aeb32eec1",
+                "reference": "17bb8408033892cb3c0cc9e5e3fe833aeb32eec1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.15|^3.6",
+                "phpunit/phpunit": "^10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WorkOS\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "WorkOS",
+                    "email": "eng@workos.com"
+                }
+            ],
+            "description": "WorkOS PHP Library",
+            "homepage": "https://workos.com",
+            "support": {
+                "issues": "https://github.com/workos/workos-php/issues",
+                "source": "https://github.com/workos/workos-php/tree/v4.20.0"
+            },
+            "time": "2025-02-21T20:33:48+00:00"
         }
     ],
     "packages-dev": [
