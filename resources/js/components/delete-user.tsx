@@ -38,7 +38,6 @@ export default function DeleteUser() {
                     <p className="font-medium">Warning</p>
                     <p className="text-sm">Please proceed with caution, this cannot be undone.</p>
                 </div>
-
                 <Dialog>
                     <DialogTrigger asChild>
                         <Button variant="destructive">Delete account</Button>
