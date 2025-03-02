@@ -9,6 +9,15 @@ export default function AppLogo() {
             <div className="ml-1 grid flex-1 text-left text-sm">
                 <span className="mb-0.5 truncate leading-none font-semibold">Starter</span>
             </div>
+            {/* <div>
+                <img 
+                    style={{height:"55px",}}
+                    src='https://www.gunanusautama.co.id/images/logo.png'
+                />
+            </div>
+            <div className="ml-1 grid flex-1 text-left text-sm">
+                <span className="mb-0.5 truncate leading-none font-semibold">Starter</span>
+            </div> */}
         </>
     );
 }
