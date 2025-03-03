@@ -16,18 +16,18 @@ const sidebarNavItems: NavItem[] = [
         url: '/settings/password',
         icon: null,
     },
-    {
-        title: 'Appearance',
-        url: '/settings/appearance',
-        icon: null,
-    },
+    // {
+    //     title: 'Appearance',
+    //     url: '/settings/appearance',
+    //     icon: null,
+    // },
 ];
 
 export default function SettingsLayout({ children }: { children: React.ReactNode }) {
     const currentPath = window.location.pathname;
 
     return (
-        <div className="flex h-full flex-1 flex-col gap-4 rounded-xs p-4 mt-4" style={{backgroundColor:"#FFFFFF"}}>
+        <div className="flex h-full flex-1 flex-col gap-4 rounded-xs p-4" style={{backgroundColor:"#FFFFFF"}}>
             <Heading title="Settings" description="Manage your profile and account settings" />
             <div className="flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:space-x-12">
                 <aside className="w-full max-w-xl lg:w-48">
