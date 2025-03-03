@@ -19,7 +19,5 @@ Route::middleware(['auth', 'verified', 'role:administrator'])->group(function ()
     Route::get('management', [UserManagementController::class, 'showManagementPage'])->name('management');
 });
 
-
-
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
