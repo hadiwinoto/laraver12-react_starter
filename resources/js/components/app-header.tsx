@@ -24,11 +24,6 @@ const mainNavItems: NavItem[] = [
 ];
 
 const rightNavItems: NavItem[] = [
-    // {
-    //     title: 'Repository',
-    //     url: '#',
-    //     icon: Folder,
-    // },
     {
         title: 'Documents',
         url: '#',
